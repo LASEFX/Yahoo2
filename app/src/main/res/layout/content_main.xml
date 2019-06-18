@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    android:background="@drawable/sky"
+    android:orientation="vertical"
+    tools:showIn="@layout/app_bar_main">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="400dp"
+                android:fontFamily="sans-serif-light"
+                android:text="Небольшая облачность"
+                android:textColor="@color/White"
+                android:textSize="20dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:fontFamily="sans-serif-light"
+                    android:text="26°"
+                    android:layout_marginLeft="30dp"
+                    android:textColor="@color/White"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:fontFamily="sans-serif-light"
+                    android:text="17°"
+                    android:textColor="@color/White"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/weather"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="30dp"
+                android:layout_marginBottom="50dp"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/White"
+                android:textSize="80dp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.CardView
+                    android:backgroundTint="@color/Grey"
+                    android:layout_width="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:text="Прогноз"
+                            android:textSize="20dp"
+                            android:layout_marginLeft="30dp"
+                            android:textColor="@color/White"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <HorizontalScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <android.support.v7.widget.CardView
+                                    android:layout_marginLeft="30dp"
+                                    android:layout_marginTop="10dp"
+                                    android:backgroundTint="@color/Invisible"
+                                    android:layout_width="50dp"
+                                    android:layout_height="wrap_content">
+                                    <TextView
+                                        android:textColor="@color/White"
+                                        android:textSize="15dp"
+                                        android:text="2 ПП"
+                                        android:gravity="center"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+
+                                    <ImageView
+                                        android:layout_marginTop="15dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:src="@mipmap/ic_launcher_round"/>
+                                    <TextView
+                                        android:layout_marginTop="80dp"
+                                        android:textColor="@color/White"
+                                        android:textSize="15dp"
+                                        android:text="26°"
+                                        android:gravity="center"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        />
+
+                                </android.support.v7.widget.CardView>
+
+                                <android.support.v7.widget.CardView
+                                    android:layout_marginLeft="30dp"
+                                    android:layout_marginTop="10dp"
+                                    android:backgroundTint="@color/Invisible"
+                                    android:layout_width="50dp"
+                                    android:layout_height="wrap_content">
+                                    <TextView
+                                        android:textColor="@color/White"
+                                        android:textSize="15dp"
+                                        android:text="3 ПП"
+                                        android:gravity="center"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+
+                                    <ImageView
+                                        android:layout_marginTop="15dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:src="@mipmap/ic_launcher_round"/>
+                                    <TextView
+                                        android:layout_marginTop="80dp"
+                                        android:textColor="@color/White"
+                                        android:textSize="15dp"
+                                        android:text="26°"
+                                        android:gravity="center"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        />
+
+                                </android.support.v7.widget.CardView>
+
+
+                                <android.support.v7.widget.CardView
+                                    android:layout_marginLeft="30dp"
+                                    android:layout_marginTop="10dp"
+                                    android:backgroundTint="@color/Invisible"
+                                    android:layout_width="50dp"
+                                    android:layout_height="wrap_content">
+                                    <TextView
+                                        android:textColor="@color/White"
+                                        android:textSize="15dp"
+                                        android:text="4 ПП"
+                                        android:gravity="center"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+
+                                    <ImageView
+                                        android:layout_marginTop="15dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:src="@mipmap/ic_launcher_round"/>
+                                    <TextView
+                                        android:layout_marginTop="80dp"
+                                        android:textColor="@color/White"
+                                        android:textSize="15dp"
+                                        android:text="26°"
+                                        android:gravity="center"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        />
+
+                                </android.support.v7.widget.CardView>
+
+
+                                <android.support.v7.widget.CardView
+                                    android:layout_marginLeft="30dp"
+                                    android:layout_marginTop="10dp"
+                                    android:backgroundTint="@color/Invisible"
+                                    android:layout_width="50dp"
+                                    android:layout_height="wrap_content">
+                                    <TextView
+                                        android:textColor="@color/White"
+                                        android:textSize="15dp"
+                                        android:text="5 ПП"
+                                        android:gravity="center"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+
+                                    <ImageView
+                                        android:layout_marginTop="15dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:src="@mipmap/ic_launcher_round"/>
+                                    <TextView
+                                        android:layout_marginTop="80dp"
+                                        android:textColor="@color/White"
+                                        android:textSize="15dp"
+                                        android:text="26°"
+                                        android:gravity="center"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        />
+
+                                </android.support.v7.widget.CardView>
+
+
+                                <android.support.v7.widget.CardView
+                                    android:layout_marginLeft="30dp"
+                                    android:layout_marginTop="10dp"
+                                    android:backgroundTint="@color/Invisible"
+                                    android:layout_width="50dp"
+                                    android:layout_height="wrap_content">
+                                    <TextView
+                                        android:textColor="@color/White"
+                                        android:textSize="15dp"
+                                        android:text="6 ПП"
+                                        android:gravity="center"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+
+                                    <ImageView
+                                        android:layout_marginTop="15dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:src="@mipmap/ic_launcher_round"/>
+                                    <TextView
+                                        android:layout_marginTop="80dp"
+                                        android:textColor="@color/White"
+                                        android:textSize="15dp"
+                                        android:text="26°"
+                                        android:gravity="center"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        />
+
+                                </android.support.v7.widget.CardView>
+
+
+                                <android.support.v7.widget.CardView
+                                    android:layout_marginLeft="30dp"
+                                    android:layout_marginTop="10dp"
+                                    android:backgroundTint="@color/Invisible"
+                                    android:layout_width="50dp"
+                                    android:layout_height="wrap_content">
+                                    <TextView
+                                        android:textColor="@color/White"
+                                        android:textSize="15dp"
+                                        android:text="7 ПП"
+                                        android:gravity="center"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+
+                                    <ImageView
+                                        android:layout_marginTop="15dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:src="@mipmap/ic_launcher_round"/>
+                                    <TextView
+                                        android:layout_marginTop="80dp"
+                                        android:textColor="@color/White"
+                                        android:textSize="15dp"
+                                        android:text="26°"
+                                        android:gravity="center"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        />
+
+                                </android.support.v7.widget.CardView>
+
+                                <android.support.v7.widget.CardView
+                                    android:layout_marginLeft="30dp"
+                                    android:layout_marginTop="10dp"
+                                    android:backgroundTint="@color/Invisible"
+                                    android:layout_width="50dp"
+                                    android:layout_height="wrap_content">
+                                    <TextView
+                                        android:textColor="@color/White"
+                                        android:textSize="15dp"
+                                        android:text="8 ПП"
+                                        android:gravity="center"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+
+                                    <ImageView
+                                        android:layout_marginTop="15dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:src="@mipmap/ic_launcher_round"/>
+                                    <TextView
+                                        android:layout_marginTop="80dp"
+                                        android:textColor="@color/White"
+                                        android:textSize="15dp"
+                                        android:text="26°"
+                                        android:gravity="center"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        />
+
+                                </android.support.v7.widget.CardView>
+
+                                <android.support.v7.widget.CardView
+                                    android:layout_marginLeft="30dp"
+                                    android:layout_marginTop="10dp"
+                                    android:backgroundTint="@color/Invisible"
+                                    android:layout_width="50dp"
+                                    android:layout_height="wrap_content">
+                                    <TextView
+                                        android:textColor="@color/White"
+                                        android:textSize="15dp"
+                                        android:text="9 ПП"
+                                        android:gravity="center"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+
+                                    <ImageView
+                                        android:layout_marginTop="15dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:src="@mipmap/ic_launcher_round"/>
+                                    <TextView
+                                        android:layout_marginTop="80dp"
+                                        android:textColor="@color/White"
+                                        android:textSize="15dp"
+                                        android:text="26°"
+                                        android:gravity="center"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        />
+
+                                </android.support.v7.widget.CardView>
+
+                                <android.support.v7.widget.CardView
+                                    android:layout_marginLeft="30dp"
+                                    android:layout_marginTop="10dp"
+                                    android:backgroundTint="@color/Invisible"
+                                    android:layout_width="50dp"
+                                    android:layout_height="wrap_content">
+                                    <TextView
+                                        android:textColor="@color/White"
+                                        android:textSize="15dp"
+                                        android:text="10 ПП"
+                                        android:gravity="center"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content" />
+
+                                    <ImageView
+                                        android:layout_marginTop="15dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:src="@mipmap/ic_launcher_round"/>
+                                    <TextView
+                                        android:layout_marginTop="80dp"
+                                        android:textColor="@color/White"
+                                        android:textSize="15dp"
+                                        android:text="26°"
+                                        android:gravity="center"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        />
+
+                                </android.support.v7.widget.CardView>
+
+
+
+
+
+                            </LinearLayout>
+
+                        </HorizontalScrollView>
+
+
+                    </LinearLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</FrameLayout>
